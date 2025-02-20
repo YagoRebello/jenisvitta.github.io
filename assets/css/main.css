@@ -695,39 +695,36 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
-.scroll-top {
+/* Estilos para o botão do WhatsApp */
+.whatsapp-button {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: -15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.scroll-top i {
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 50px;
+  height: 50px;
+  background-color: #25D366 !important; /* Cor do WhatsApp */
+  color: white !important;
   font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+/* Ícone dentro do botão */
+.whatsapp-button i {
+  color: white !important;
 }
 
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 15px;
+/* Efeito de hover */
+.whatsapp-button:hover {
+  background-color: #1ebe57 !important;
 }
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -2058,6 +2055,14 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+.custom-icon {
+  width: 40px; /* Tamanho do ícone */
+  height: 40px; /* Tamanho do ícone */
+  color: #47b2e4;
+  /*filter: brightness(0) invert(1); /* Transforma a imagem em branco */
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
