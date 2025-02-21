@@ -21,7 +21,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #4dbfb4;  /* The default color of the main navmenu links (usando o verde-água da logo) */
+  --nav-color: #dcdcdc;  /* The default color of the main navmenu links (usando o verde-água da logo) */
   --nav-hover-color: #e1f35a; /* Amarelo-esverdeado da logo para hover e links ativos */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -37,9 +37,9 @@
 }
 
 .dark-background {
-  --background-color: rgba(77, 191, 180, 0.9);;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --background-color: rgb(250, 249, 246);
+  --default-color: #4dbfb4;
+  --heading-color: #2c2c2c;
   --surface-color: #4668a2;
   --contrast-color: #ffffff;
 }
@@ -135,17 +135,21 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #4dbfb4; /* Verde-água da logo */
-  --heading-color: #ffffff; /* Cor do texto no header */
-  color: var(--default-color);
+  --background-color: #dcdcdc; /* Novo fundo cinza claro */
+  --heading-color: #333333; /* Cor do texto no header */
+  color: var(--heading-color);
   background-color: var(--background-color);
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombreado suave */
+  /* border-bottom: 2px solid; Borda na parte inferior */
 }
 
 .header .logo {
   line-height: 1;
+  /* filter: brightness(1.2) contrast(1.5); Aumenta o brilho e o contraste */
+  
 }
 
 .header .logo img {
@@ -157,26 +161,9 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 500;
-  color: var(--heading-color); /* Cor da logo */
+  color: var(--heading-color); /* Cor do texto ao lado da logo */
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: #73cc9d; /* Verde médio da logo */
-  font-size: 14px;
-  padding: 8px 25px;
-  margin: 0 0 0 30px;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, #73cc9d, transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -198,15 +185,15 @@ h6 {
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(77, 191, 180, 0.9); /* Verde-água com transparência */
-  --heading-color: #ffffff;
+  --background-color: #FAF9F6; /* rgba(77, 191, 180, 0.9);  Verde-água com transparência */
+  --heading-color:  rgba(77, 191, 180, 0.9); /* Verde-água com transparência */
   --nav-color: #ffffff;
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(77, 191, 180, 0.9); /* Verde-água com transparência */
+  --background-color:#FAF9F6; /* Verde-água com transparência */
 }
 
 /*--------------------------------------------------------------
@@ -232,7 +219,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--heading-color); /* Cor dos links do menu */
     padding: 18px 15px;
     font-size: 15px;
     font-family: var(--nav-font);
@@ -242,6 +229,7 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    /* filter: brightness(1.2) contrast(1.5); Aumenta o brilho e o contraste */
   }
 
   .navmenu a i,
@@ -436,7 +424,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--accent-color); /* Cor de destaque ao passar o mouse */
   }
 
   .navmenu .active i,
@@ -851,7 +839,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #2c2c2c;
   margin: 5px 0 30px 0;
   font-size: 22px;
   line-height: 1.3;
