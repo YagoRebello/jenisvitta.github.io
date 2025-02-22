@@ -1,41 +1,34 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'yagohrebello@gmail.com';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Definir o e-mail de destino (empresa)
+    $para = "yagohrebello@gmail.com"; // Substitua pelo e-mail real
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    // Definir o assunto do e-mail
+    $assunto = "Novo contato do site: " . $_POST["subject"];
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    // Construir o corpo da mensagem
+    $mensagem = "Você recebeu uma nova mensagem do formulário de contato:\n\n";
+    $mensagem .= "Seu Nome: " . htmlspecialchars($_POST["name"]) . "\n";
+    $mensagem .= "Seu Email: " . htmlspecialchars($_POST["email"]) . "\n";
+    $mensagem .= "Assunto: " . htmlspecialchars($_POST["subject"]) . "\n";
+    $mensagem .= "Mensagem:\n" . htmlspecialchars($_POST["message"]) . "\n";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    // Definir os cabeçalhos do e-mail
+    $headers = "From: " . $_POST["email"] . "\r\n";
+    $headers .= "Reply-To: " . $_POST["email"] . "\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+    // Enviar o e-mail
+    if (mail($para, $assunto, $mensagem, $headers)) {
+        echo "Sua mensagem foi enviada com sucesso!";
+    } else {
+        echo "Ocorreu um erro ao enviar a mensagem.";
+    }
+} else {
+    echo "Método de requisição inválido.";
+}
 ?>
