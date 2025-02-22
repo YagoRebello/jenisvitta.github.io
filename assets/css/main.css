@@ -1398,11 +1398,15 @@ section,
 .team .team-member .pic {
   overflow: hidden;
   width: 150px;
-  border-radius: 50%;
+  height: 150px; /* Garante que o contêiner seja quadrado */
+  border-radius: 50%; /* Torna o contêiner redondo */
   flex-shrink: 0;
 }
 
 .team .team-member .pic img {
+  width: 100%; /* Faz a imagem ocupar 100% do contêiner */
+  height: 100%; /* Faz a imagem ocupar 100% do contêiner */
+  object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
   transition: ease-in-out 0.3s;
 }
 
@@ -2090,7 +2094,6 @@ section,
 
 .valores-texto p {
   position: relative;
-  padding-left: 20px; /* Espaço para a estrela */
   text-align: left; /* Alinha o texto à esquerda */
   display: inline-block; /* Centraliza o bloco de texto */
 }
