@@ -822,6 +822,37 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Container da Imagem */
+.hero-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas, se desejar */
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas, se desejar */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remover animação de subir e descer */
+.animated {
+  animation: none !important;
+}
+
+/* Ajustes para Dispositivos Móveis */
+@media (max-width: 768px) {
+  .hero-img {
+    margin-top: 20px; /* Espaçamento acima da imagem em dispositivos móveis */
+  }
+}
+
 .hero {
   width: 100%;
   min-height: 80vh;

@@ -76,7 +76,9 @@
             </div> -->
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            <div class="image-container">
+              <img src="assets/img/hero-img.jpg" class="img-fluid" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -218,7 +220,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -228,7 +229,7 @@
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-hospital"></i></div>
-              <h4><a href="" class="stretched-link">Plano de Saúde</a></h4>
+              <h4><a class="stretched-link">Plano de Saúde</a></h4>
               <p>Cobertura completa para sua saúde com as melhores redes credenciadas.</p>
             </div>
           </div><!-- End Service Item -->
@@ -236,7 +237,7 @@
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><img src="assets/img/tooth.png" alt="" class="custom-icon"></div>
-              <h4><a href="" class="stretched-link">Plano Odonto</a></h4>
+              <h4><a class="stretched-link">Plano Odonto</a></h4>
               <p>Cuide do seu sorriso com atendimento odontológico de qualidade.</p>
             </div>
           </div><!-- End Service Item -->
@@ -244,7 +245,7 @@
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon"><img src="assets/img/pawprint.png" alt="" class="custom-icon"></div>
-              <h4><a href="" class="stretched-link">Plano Pet</a></h4>
+              <h4><a  class="stretched-link">Plano Pet</a></h4>
               <p>Proteção e bem-estar para o seu pet com assistência veterinária especializada.</p>
             </div>
           </div><!-- End Service Item -->
@@ -269,35 +270,17 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-adesao">Adesão</li>
-            <li data-filter=".filter-familiar">Familiar</li>
             <li data-filter=".filter-individual">Individual</li>
+            <li data-filter=".filter-familiar">Familiar</li>
             <li data-filter=".filter-mei">MEI</li>
             <li data-filter=".filter-empresarial">Empresarial</li>
+            <li data-filter=".filter-individual">Individual</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-adesao">
-              <img src="assets/img/masonry-portfolio/teste1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Adesão</h4>
-                <p>Clique no icone para saber mais</p>
-                <a href="adesao.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-familiar">
-              <img src="assets/img/masonry-portfolio/teste2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Familiar</h4>
-                <p>Clique no icone para saber mais</p>
-                <a href="familiar.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-individual">
-              <img src="assets/img/masonry-portfolio/teste3.png" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/individual.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Individual</h4>
                 <p>Clique no icone para saber mais</p>
@@ -305,8 +288,17 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-familiar">
+              <img src="assets/img/masonry-portfolio/familiar.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Familiar</h4>
+                <p>Clique no icone para saber mais</p>
+                <a href="familiar.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mei">
-              <img src="assets/img/masonry-portfolio/teste3.png" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/mei.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>MEI</h4>
                 <p>Clique no icone para saber mais</p>
@@ -315,7 +307,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-empresarial">
-              <img src="assets/img/masonry-portfolio/teste3.png" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/empresarial.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Empresarial</h4>
                 <p>Clique no icone para saber mais</p>
@@ -323,6 +315,14 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-adesao">
+              <img src="assets/img/masonry-portfolio/adesao.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Adesão</h4>
+                <p>Clique no icone para saber mais</p>
+                <a href="adesao.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
 
@@ -338,7 +338,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Equipe</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -352,7 +351,7 @@
                 <h4>Denis Vieira</h4>
                 <span>Diretor de Vendas de Plano de Saúde</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://wa.me/5511917246691"><i class="bi bi-whatsapp"></i></a>
                 </div>
               </div>
             </div>
@@ -365,7 +364,7 @@
                 <h4>Erik Ribak</h4>
                 <span>Especialista em Plano de Saúde</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://wa.me/5511917246691"><i class="bi bi-whatsapp"></i></a>
                 </div>
               </div>
             </div>
@@ -378,20 +377,7 @@
                 <h4>Leonardo Moraes</h4>
                 <span>Especialista em Plano de Saúde</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Jessica da Bagunça</h4>
-                <span>Dona da porra toda</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://wa.me/5511917246691"><i class="bi bi-whatsapp"></i></a>
                 </div>
               </div>
             </div>
@@ -598,7 +584,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
