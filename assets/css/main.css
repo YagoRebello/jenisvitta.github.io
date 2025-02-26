@@ -39,7 +39,7 @@
 .dark-background {
   --background-color: rgb(250, 249, 246);
   --default-color: #4dbfb4;
-  --heading-color: #2c2c2c;
+  --heading-color: #4dbfb4;
   --surface-color: #4668a2;
   --contrast-color: #ffffff;
 }
@@ -826,19 +826,20 @@ section,
 .hero-img {
   position: relative;
   overflow: hidden;
-  border-radius: 10px; /* Bordas arredondadas, se desejar */
+  height: 100vh; /* Ou a altura desejada */
 }
 
 .image-container {
   position: relative;
   overflow: hidden;
-  border-radius: 10px; /* Bordas arredondadas, se desejar */
+  height: 100%; /* Garante que o container ocupe toda a altura da section */
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover; /* Faz a imagem cobrir todo o espaço disponível */
 }
 
 /* Remover animação de subir e descer */
@@ -855,9 +856,9 @@ section,
 
 .hero {
   width: 100%;
+  height: 100%;
   min-height: 80vh;
   position: relative;
-  padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
 }

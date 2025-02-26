@@ -49,12 +49,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#portfolio">Categorias</a></li>
-          <li><a href="#team">Equipe</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servico">Serviços</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -64,25 +64,15 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Mais saúde, mais vida com Jenis Vitta.</h1>
-            <!-- <div class="d-flex">
-              <a href="#about" class="btn-get-started">Começar</a>
-            </div> -->
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <div class="image-container">
-              <img src="assets/img/hero-img.jpg" class="img-fluid" alt="">
-            </div>
+    <section id="inicio" class="hero section dark-background">
+      <div class="container-fluid p-0"> <!-- Usando container-fluid para ocupar toda a largura -->
+        <div class="row g-0"> <!-- Removendo o espaçamento entre colunas -->
+          <div class="col-12">
+            <img src="assets/img/teste2.png" class="img-fluid w-100" alt=""> <!-- Imagem ocupando 100% da largura -->
           </div>
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
+    </section>
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
@@ -149,7 +139,7 @@
     </section><!-- /Clients Section -->
 
     <!-- About Section --> 
-    <section id="about" class="about section">
+    <section id="sobre" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -214,7 +204,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
+    <section id="servico" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -256,7 +246,7 @@
     </section><!-- /Services Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section id="categorias" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -332,7 +322,7 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section">
+    <section id="equipe" class="team section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -345,16 +335,30 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-3.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/jessica3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Denis Vieira</h4>
-                <span>Diretor de Vendas de Plano de Saúde</span>
+                <h4>Jessica Sampaio</h4>
+                <span>Cofundadora</span>
                 <div class="social">
                   <a href="https://wa.me/5511917246691"><i class="bi bi-whatsapp"></i></a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/ariane.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ariane Ferreira</h4>
+                <span>Cofundadora</span>
+                <div class="social">
+                  <a href="https://wa.me/5511917246691"><i class="bi bi-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
@@ -381,7 +385,6 @@
               </div>
             </div>
           </div><!-- End Team Member -->
-
         </div>
 
       </div>
@@ -578,7 +581,7 @@
     <!-- /Faq 2 Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contato" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">

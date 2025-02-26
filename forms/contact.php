@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Email do destinatário
-    $receiving_email_address = 'yagohrebello@gmail.com';
+    $receiving_email_address = 'contato@jenisvitta.com';
 
     // Cabeçalhos do email
     $headers = "From: $name <$email>" . "\r\n" .
