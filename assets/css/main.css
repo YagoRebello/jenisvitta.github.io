@@ -2144,3 +2144,23 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.swiper-container {
+  width: 100%;
+  padding: 20px 40px; /* Adiciona 40px de padding nas laterais */
+}
+
+.swiper-slide {
+  width: 200px; /* Largura fixa para cada slide */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 80px; /* Altura fixa para todas as imagens */
+  object-fit: contain; /* Ajusta a imagem sem distorção */
+  object-position: center; /* Centraliza a imagem */
+}
+

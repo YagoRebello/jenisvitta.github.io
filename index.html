@@ -8,15 +8,15 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo.webp" alt="">
         <h1 class="sitename">Jenis Vitta</h1>
       </a>
 
@@ -68,7 +68,7 @@
       <div class="container-fluid p-0"> <!-- Usando container-fluid para ocupar toda a largura -->
         <div class="row g-0"> <!-- Removendo o espaçamento entre colunas -->
           <div class="col-12">
-            <img src="assets/img/teste2.png" class="img-fluid w-100" alt=""> <!-- Imagem ocupando 100% da largura -->
+            <img src="assets/img/teste2.webp" class="img-fluid w-100" alt=""> <!-- Imagem ocupando 100% da largura -->
           </div>
         </div>
       </div>
@@ -76,68 +76,52 @@
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
-
-      <div class="container" data-aos="zoom-in">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 6000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 120
-                },
-                "1200": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/prevent.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/medsenior.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/notredame.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/unimed.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/trasmontano.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/alice.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/amil.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/amil-dental.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/bradesco.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/omint.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/sami.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/porto-saude.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/hapvida.png" class="img-fluid" alt=""></div>
+      <div class="container">
+        <div class="swiper-container" data-aos="zoom-in">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/clients/alice.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/amil.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/amil-dental.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/bradesco.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/hapvida.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/medsenior.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/notredame.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/omint.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/porto-saude.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/prevent.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/sami.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/trasmontano.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/unimed.webp" class="img-fluid" alt="">
+            </div>
           </div>
         </div>
-
       </div>
-
     </section><!-- /Clients Section -->
-
     <!-- About Section --> 
     <section id="sobre" class="about section">
 
@@ -225,7 +209,7 @@
 
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon"><img src="assets/img/tooth.png" alt="" class="custom-icon"></div>
+              <div class="icon"><img src="assets/img/tooth.webp" alt="" class="custom-icon" loading="lazy"></div>
               <h4><a class="stretched-link">Plano Odonto</a></h4>
               <p>Cuide do seu sorriso com atendimento odontológico de qualidade.</p>
             </div>
@@ -233,7 +217,7 @@
 
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><img src="assets/img/pawprint.png" alt="" class="custom-icon"></div>
+              <div class="icon"><img src="assets/img/pawprint.webp" alt="" class="custom-icon" loading="lazy"></div>
               <h4><a  class="stretched-link">Plano Pet</a></h4>
               <p>Proteção e bem-estar para o seu pet com assistência veterinária especializada.</p>
             </div>
@@ -269,7 +253,7 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-individual">
-              <img src="assets/img/masonry-portfolio/individual.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/individual.webp" class="img-fluid" alt="" loading="lazy">
               <div class="portfolio-info">
                 <h4>Individual</h4>
                 <p>Clique no icone para saber mais</p>
@@ -278,7 +262,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-familiar">
-              <img src="assets/img/masonry-portfolio/familiar.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/familiar.webp" class="img-fluid" alt="" loading="lazy">
               <div class="portfolio-info">
                 <h4>Familiar</h4>
                 <p>Clique no icone para saber mais</p>
@@ -287,7 +271,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mei">
-              <img src="assets/img/masonry-portfolio/mei.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/mei.webp" class="img-fluid" alt="" loading="lazy">
               <div class="portfolio-info">
                 <h4>MEI</h4>
                 <p>Clique no icone para saber mais</p>
@@ -296,7 +280,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-empresarial">
-              <img src="assets/img/masonry-portfolio/empresarial.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/empresarial.webp" class="img-fluid" alt="" loading="lazy">
               <div class="portfolio-info">
                 <h4>Empresarial</h4>
                 <p>Clique no icone para saber mais</p>
@@ -305,7 +289,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-adesao">
-              <img src="assets/img/masonry-portfolio/adesao.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/adesao.webp" class="img-fluid" alt="" loading="lazy">
               <div class="portfolio-info">
                 <h4>Adesão</h4>
                 <p>Clique no icone para saber mais</p>
@@ -335,7 +319,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/jessica3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/jessica3.webp" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Jessica Sampaio</h4>
                 <span>Cofundadora</span>
@@ -348,7 +332,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/ariane.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/ariane.webp" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Ariane Ferreira</h4>
                 <span>Cofundadora</span>
@@ -362,7 +346,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Erik Ribak</h4>
                 <span>Especialista em Plano de Saúde</span>
@@ -375,7 +359,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-2.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Leonardo Moraes</h4>
                 <span>Especialista em Plano de Saúde</span>
@@ -714,17 +698,61 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 20, /* Adiciona 20px de espaçamento entre os slides */
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 80,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 120,
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 120,
+        },
+      },
+    });
+  });
+  </script>
 
 </body>
 

@@ -215,5 +215,20 @@
     }
   });
   
-
+  document.addEventListener("DOMContentLoaded", function () {
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          let swiper = new Swiper(".swiper", JSON.parse(document.querySelector(".swiper-config").textContent));
+          observer.disconnect(); // Evita reinicialização desnecessária
+        }
+      });
+    });
+  
+    let clientsSection = document.getElementById("clients");
+    if (clientsSection) {
+      observer.observe(clientsSection);
+    }
+  });
+  
 })();
