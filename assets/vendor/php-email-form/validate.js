@@ -28,26 +28,27 @@
 
   function php_email_form_submit(thisForm, action, formData) {
     fetch(action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
     })
     .then(response => {
-      if (response.ok) {
+        console.log("Status:", response.status);
+        console.log("Headers:", response.headers);
         return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`);
-      }
     })
     .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.add('d-block');
-      thisForm.reset();
+        console.log("Response Data:", data);
+        thisForm.querySelector('.loading').classList.remove('d-block');
+        thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.reset();
     })
     .catch(error => {
-      displayError(thisForm, error);
+        console.error("Erro na requisição:", error);
+        displayError(thisForm, error);
     });
-  }
+}
+
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
