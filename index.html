@@ -9,7 +9,7 @@
   <meta name="keywords" content="planos de saúde, saúde, medicina">
 
   <!-- Preload de recursos críticos -->
-  <link rel="preload" href="assets/css/main.css" as="style">
+  <link rel="preload" href="assets/css/main.min.css" as="style">
   <link rel="preload" href="assets/img/logo.webp" as="image">
   
   <!-- Fonts otimizadas -->
@@ -29,7 +29,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.min.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha
@@ -644,7 +644,7 @@
                   <div class="loading">Carregando</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
-                  <div class="g-recaptcha" data-sitekey="6Lfe-OQqAAAAANhXeSGA5g0gRd4ntGq9Wtcq90Sb"></div>
+                  <div class="g-recaptcha mb-3" data-sitekey="6Lfe-OQqAAAAANhXeSGA5g0gRd4ntGq9Wtcq90Sb"></div>
                   <button type="submit">Enviar Mensagem</button>
                 </div>
               </div>
@@ -711,53 +711,52 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js" defer></script>>
+  <script src="assets/js/main.js" defer></script>
 
-  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      spaceBetween: 20, /* Adiciona 20px de espaçamento entre os slides */
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 10,
+      new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 60,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
-        640: {
-          slidesPerView: 4,
-          spaceBetween: 80,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-        992: {
-          slidesPerView: 5,
-          spaceBetween: 120,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 80,
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 120,
+          },
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 120,
+          },
         },
-        1200: {
-          slidesPerView: 6,
-          spaceBetween: 120,
-        },
-      },
+      });
     });
-  });
   </script>
 
 </body>
