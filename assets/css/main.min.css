@@ -1621,3 +1621,38 @@ section,
   display: block;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  
+  .hero .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  
+  .hero .row {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  
+  .hero .col-12 {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+
+  .hero img {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
